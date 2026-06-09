@@ -1,0 +1,43 @@
+name: fungid3
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  image_picker: ^1.1.1
+  tflite_v2: ^1.0.0
+
+dependency_overrides:
+  tflite_v2:
+    path: plugins/tflite_v2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    # Asset Sistem & Model
+    - assets/logo.png
+    - assets/scanjamur.png
+    - assets/warna_mencolok.jpeg
+    - assets/tempat_lembap.jpeg
+    - assets/bau_menyenga.jpeg
+    - assets/licin_berlendir.jpeg
+    - assets/model_cnn.tflite
+    - assets/labels.txt
+
+    # Asset Gambar Jamur (Mendaftarkan seluruh folder agar file 1-15 terbaca otomatis)
+    - assets/
