@@ -25,12 +25,22 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^5.0.0
 
+  # 1. MENAMBAHKAN PACKAGING LOGO DI SINI
+  flutter_launcher_icons: ^0.13.1
+
+# 2. MENAMBAHKAN ATURAN LOGO (Sesuai dengan nama file 'logo.png' kamu)
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo.png"
+  min_sdk_android: 21
+
 flutter:
   uses-material-design: true
 
   assets:
     # Asset Sistem & Model
-    - assets/logo.png
+    - assets/logo_aplikasi.png
     - assets/scanjamur.png
     - assets/warna_mencolok.jpeg
     - assets/tempat_lembap.jpeg
@@ -39,5 +49,5 @@ flutter:
     - assets/model_cnn.tflite
     - assets/labels.txt
 
-    # Asset Gambar Jamur (Mendaftarkan seluruh folder agar file 1-15 terbaca otomatis)
+    # Asset Gambar Jamur
     - assets/

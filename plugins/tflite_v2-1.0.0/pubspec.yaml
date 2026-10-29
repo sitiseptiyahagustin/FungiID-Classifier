@@ -10,14 +10,24 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  
+
   meta: ^1.3.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   test: ^1.16.5
-  
+
+ # TAMBAHKAN KODE INI:
+  flutter_launcher_icons: "^0.13.1"
+
+# TAMBAHKAN JUGA DI BAGIAN PALING BAWAH FILE (TIDAK MENJOROK):
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo_aplikasi.png"
+  min_sdk_android: 21
+
 # For information on the generic Dart part of this file, see the
 # following page: https://www.dartlang.org/tools/pub/pubspec
 
